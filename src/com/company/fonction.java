@@ -27,6 +27,14 @@ public class fonction {
         System.out.println("tapez 'menu' pour revenir au menu");
     }
 
+    public static void optionMenuInGame(){
+        System.out.println(" ");
+        System.out.println("tapez 'rules' pour affichez les régles");
+        System.out.println("tapez 'play' pour commencer une nouvelle partie");
+        System.out.println("tapez 'leave pour quitter");
+        System.out.println("tapez 'menu' pour revenir au menu");
+    }
+
     public static void rules() {
         System.out.println("Règlement :");
         System.out.println("- Votre but est de coincer l'adversaire sur une case.");
@@ -85,7 +93,7 @@ public class fonction {
         String[][] board = new String[11][12];
         // the first [] tie in to the abscissa line / the second [] tie in to the ordinate line
         int abscisses = 0;
-        int ordonnées = 0;;
+        int ordonnées = 0;
         char alphabet = 'A';
         Scanner myScan = new Scanner(System.in);
 
@@ -116,6 +124,7 @@ public class fonction {
             System.out.println();
 
         }
+        optionMenuInGame();
 
         return board;
     }
